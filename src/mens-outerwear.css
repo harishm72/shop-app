@@ -1,16 +1,124 @@
+@media only screen and (max-width: 767px) {
+    .hidden-menu{
+        display: block;
+    }
+     .nav-menu a {
+         display: none;
+     }
+     .mens-outerwear img {
+        height: 200px !important;
+    }
+
+ }
+ @media only screen and (min-width: 768px) {
+
+    .hidden-menu{
+        visibility: hidden;
+    }
+    .mens-apparel{
+        list-style-type: none; 
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+body{
+    margin: 0;
+}
+header {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.25em;
+}
+.menu-button{
+    display: none;
+    flex-basis: 5%;
+    font-size: 1em;
+}
+.shop {
+    flex-basis: 95%;
+    text-align: center;
+}
+
+.cart-button {
+    flex-basis: 5%;
+}
+
+.cart-button img {
+    padding: 1.2em;
+    width: 40%;
+}
+
 .mens-outerwear {
     display: flex;
     flex-direction: column;
-    
+}
 
 .mens-outerwear img {
     width: 100%;
-    
 }
 
 .mens-outerwear p {
     align-self: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
-    
+}
+/* apparel style starts here */
+.mens-apparel{
+    list-style-type: none; 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.mens-apparel li{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.mens-apparel img{
+    max-width: 100%;
+    align-self: center;
+}
+.item-name{
+    margin-top: 4em;
+    margin-bottom: 0;
+    align-self: center;
+}
+.price{
+    align-self: center;
+    color: gray;
+    margin: 0em 0em 3em 0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2em; 
+}
+footer a{
+    align-self: center;
+}
+footer button{
+   align-self: center;
+   background-color: black;
+   color: white;
+   width: 8em;
+   height: 2em; 
 }

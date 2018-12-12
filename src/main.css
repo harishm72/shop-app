@@ -1,9 +1,13 @@
-  /* body,
+/* body,
  .nav-menu div,
  .nav-menu a, header h3, button, img, p{
      border: 2px solid red;
  }  */
+ 
  @media only screen and (max-width: 767px) {
+    .hidden-menu{
+        display: block;
+    }
      .nav-menu a {
          display: none;
      }
@@ -15,27 +19,29 @@
     }
 
  }
+ @media only screen and (min-width: 768px) {
 
- header {
+    .hidden-menu{
+        visibility: hidden;
+    }
+}
+ body{
+    margin: 0;
+}
+ .shop {
      display: flex;
+     justify-content: space-between;
      font-family: 'Roboto', sans-serif;
-     letter-spacing: 0.25em;
+     margin: 1.5em 1.5em 0 1.5em;
  }
-
- header h3 {
-     flex-basis: 95%;
-     text-align: center;
- }
-
- .cart-button {
-     flex-basis: 5%;
- }
+ .shop-title{
+     letter-spacing: 0.4em;
+    align-self: center;
+}
 
  .cart-button img {
-     padding: 1.2em;
-     width: 40%;
+     width: 25px;
  }
-
  .nav-menu {
      display: flex;
      padding: 1.5em;
@@ -45,7 +51,7 @@
  }
 
  .nav-menu a {
-     flex-basis: 10%;
+     flex-basis: 150px;
  }
 
  .mens-outerwear {
@@ -172,12 +178,11 @@
  footer a{
      align-self: center;
  }
- footer p{
+ footer button{
     align-self: center;
     background-color: black;
     color: white;
-    width: 6em;
-    height: 1em;
-    padding-left: 0.25em; 
+    width: 8em;
+    height: 2em; 
  }
  
