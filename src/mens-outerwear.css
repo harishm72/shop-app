@@ -1,0 +1,16 @@
+.mens-outerwear {
+    display: flex;
+    flex-direction: column;
+    
+
+.mens-outerwear img {
+    width: 100%;
+    
+}
+
+.mens-outerwear p {
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    
+}
