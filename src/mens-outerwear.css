@@ -1,43 +1,55 @@
 @media only screen and (max-width: 767px) {
-    .hidden-menu{
+    .hidden-menu {
         display: block;
     }
-     .nav-menu a {
-         display: none;
-     }
-     .mens-outerwear img {
+
+    .nav-menu a {
+        display: none;
+    }
+
+    .mens-outerwear img {
         height: 200px !important;
     }
+    .mens-apparel {
+        grid-template-columns: 1fr 1fr !important;
+    }
 
- }
- @media only screen and (min-width: 768px) {
+}
 
-    .hidden-menu{
+@media only screen and (min-width: 768px) {
+
+    .hidden-menu {
         visibility: hidden;
     }
-    .mens-apparel{
-        list-style-type: none; 
+
+    .mens-apparel {
+        list-style-type: none;
         display: grid;
         justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
-body{
+
+body {
     margin: 0;
 }
+
 header {
     display: flex;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.25em;
 }
-.menu-button{
+
+.menu-button {
     display: none;
     flex-basis: 5%;
     font-size: 1em;
 }
+
 .shop {
     flex-basis: 95%;
     text-align: center;
+    font-weight: 600;
 }
 
 .cart-button {
@@ -62,63 +74,57 @@ header {
     align-self: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
+    flex-basis: 150px;
 }
+
 /* apparel style starts here */
-.mens-apparel{
-    list-style-type: none; 
+.mens-apparel {
+    list-style-type: none;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-   
+
 }
-.mens-apparel li{
+
+.mens-apparel li {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
 }
-.mens-apparel img{
+
+.mens-apparel img {
     max-width: 100%;
     align-self: center;
 }
-.item-name{
+
+.item-name {
     margin-top: 4em;
     margin-bottom: 0;
     align-self: center;
 }
-.price{
+
+.price {
     align-self: center;
     color: gray;
     margin: 0em 0em 3em 0em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
+footer {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    padding-top: 2em; 
+    padding-top: 2em;
 }
-footer a{
+
+footer a {
     align-self: center;
 }
-footer button{
-   align-self: center;
-   background-color: black;
-   color: white;
-   width: 8em;
-   height: 2em; 
+
+footer button {
+    align-self: center;
+    background-color: black;
+    color: white;
+    width: 8em;
+    height: 2em;
 }

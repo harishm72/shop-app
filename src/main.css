@@ -32,11 +32,12 @@
      display: flex;
      justify-content: space-between;
      font-family: 'Roboto', sans-serif;
-     margin: 1.5em 1.5em 0 1.5em;
+     margin: 1.5em;
  }
  .shop-title{
      letter-spacing: 0.4em;
     align-self: center;
+    font-weight: 600;
 }
 
  .cart-button img {
@@ -169,20 +170,21 @@
      width: 12em;
      height: 3em;
  }
- footer{
+ footer {
      display: flex;
      flex-direction: column;
      font-family: 'Roboto', sans-serif;
-     padding-top: 2em; 
+     padding-top: 2em;
  }
- footer a{
+
+ footer a {
      align-self: center;
  }
- footer button{
-    align-self: center;
-    background-color: black;
-    color: white;
-    width: 8em;
-    height: 2em; 
+
+ footer button {
+     align-self: center;
+     background-color: black;
+     color: white;
+     width: 8em;
+     height: 2em;
  }
- 
