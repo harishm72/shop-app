@@ -2,22 +2,24 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="../images/shop-icon-32.png">
     <title>Polymer SHOP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/cssReset.css">
+    <link rel="stylesheet" href="../style/style.css">
+
 </head>
 
 <body>
     <div class="shop">
-        <span class="hidden-menu">
-            <---</span> <a class="shop-title">SHOP</a>
-                <span class="cart-button">
-                    <img src="../images/Cart-PNG-File.png">
-                </span>
+        <a href="./mens-outerwear.html"><i style="font-size:24px" class="fa">&#xf177;</i></a>
+        <a href="./index.html" class="shop-title">SHOP</a>
+        <a href="./cart.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a>
     </div>
     <nav class="nav-menu">
-        <a>Men's Outerwear</a>
+        <a href="./mens-outerwear.html">Men's Outerwear</a>
         <a>Ladies Outerwear</a>
         <a>Men's T-Shirts</a>
         <a>Ladies T-Shirts</a>
@@ -29,9 +31,8 @@
         </div>
         <div class="product-info">
             <h1 class="product-title">Recycled Plastic Bottle Hoodie - Green</h1>
-            <p class="price">$60.95</p>
-            <hr>
-            
+            <p class="product-price">$60.95</p>
+
             <div class="size">
                 <label for="size">Size</label>
 
@@ -43,24 +44,26 @@
                     <option value="XL">XL</option>
                 </select>
             </div>
-            <hr>
+
             <div class="quantity">
                 <label for="quantity">Quantity</label>
 
                 <select>
-                    <option value="1" >1</option>
+                    <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
             </div>
-            <hr>
-            <h5>Description</h5>
-            <p class="description">Ever wonder where all of the disposable water bottles of the world
-                end up? We know some of them are reused for a second purpose.
-                Each of these hoodies contain approximately 9 recycled water bottles
-                that are woven into the fabric.</p>
+            <div >
+                <p class="description-head">Description</p>
+                <p class="description">Ever wonder where all of the disposable water bottles of the world
+                    end up? We know some of them are reused for a second purpose.
+                    Each of these hoodies contain approximately 9 recycled water bottles
+                    that are woven into the fabric.</p>
+            </div>
+
             <div class="features">
                 <p>Features:</p>
                 <ul>
@@ -71,11 +74,11 @@
                 </ul>
             </div>
             <div>
-                <button>ADD TO CART</button>
+                <a href="./cart.html"><button>ADD TO CART</button></a>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="page-footer">
         <a>Made by Harish</a>
         <button>DEMO ONLY</button>
     </footer>

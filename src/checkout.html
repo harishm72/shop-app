@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/cssReset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../images/shop-icon-32.png">
+    <title>CHECK OUT</title>
+</head>
+
+<body>
+    <header class="shop">
+            <i class="hidden-menu">&#x2630;</i>
+        <a href="./index.html" class="shop-title">SHOP</a>
+        <a href="./cart.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a>
+    </header>
+    <section class="checkout">
+        <div>Checkout</div>
+        <div id="demo">Shop is a demo app - form data will not be sent</div>
+    </section>
+    <section class="billing-info">
+        <form class="acc-info">
+            <p class="info-headings">Account Information</p>
+            <input type="email" placeholder="Email" autocomplete="off">
+            <input type="email" placeholder="Phone Number" autocomplete="off">
+            <p class="info-headings">Shipping Address</p>
+            <input type="text" placeholder="Address" autocomplete="off">
+            <input type="text" placeholder="City" autocomplete="off">
+            <div class="zipcode">
+                <input type="text" placeholder="State/Province">
+                <input type="text" placeholder="Zip/PostalCode" autocomplete="off">
+            </div>
+
+            <div class="country-name">
+                <label>Country</label>
+                <select for="Country">
+                    <option selected>United States</option>
+                    <option>Canada</option>
+                </select>
+            </div>
+            <p class="info-headings">Billing Address</p>
+            <div class="check">
+                <input type="checkbox">
+                <p> Use different billing addres</p>
+            </div>
+
+            <input type="text" placeholder="Address" autocomplete="off">
+            <input type="text" placeholder="City" autocomplete="off">
+            <div class="zipcode">
+                <input type="text" placeholder="State/Province">
+                <input type="text" placeholder="Zip/PostalCode" autocomplete="off">
+            </div>
+            <div class="country-name">
+                <label>Country</label>
+                <select for="Country">
+                    <option selected>United States</option>
+                    <option>Canada</option>
+                </select>
+            </div>
+        </form>
+        <form class="payment-info">
+            <p class="info-headings">Payment Method</p>
+            <input type="text" placeholder="Cardholder Name">
+            <input type="text" placeholder="Card Number">
+            <div class="card-info">
+                <div class="expiry-date">
+                    <label>Expiry</label>
+                    <select for="expiry-date">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sep</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+                </div>
+                <div class="expiry-year">
+                    <select for="year">
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        <option>2025</option>
+                        <option>2026</option>
+
+                    </select>
+                </div>
+                <input type="password" placeholder="CVV">
+
+            </div>
+            <section class="order-summary">
+                <p class="info-headings">Order Summary</p>
+                <div class="order-details">
+                    <p>YouTube Unisex Flex Fleece Zip Hoodie</p>
+                    <p>$45.25</p>
+                </div>
+                <div class="order-details">
+                    <p>Total</p>
+                    <p>$45.25</p>
+                </div>
+                <button class="place-order-btn">PLACE ORDER</button>
+            </section>
+        </form>
+    </section>
+    <footer>
+        <a>Made by Harish</a>
+        <button>DEMO ONLY</button>
+    </footer>
+</body>
+
+</html>
