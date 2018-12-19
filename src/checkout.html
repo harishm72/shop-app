@@ -13,7 +13,7 @@
 
 <body>
     <header class="shop">
-            <i class="hidden-menu">&#x2630;</i>
+        <i class="hidden-menu">&#x2630;</i>
         <a href="./index.html" class="shop-title">SHOP</a>
         <a href="./cart.html"><i style="font-size:24px" class="fa">&#xf07a;</i></a>
     </header>
@@ -24,14 +24,33 @@
     <section class="billing-info">
         <form class="acc-info">
             <p class="info-headings">Account Information</p>
-            <input type="email" placeholder="Email" autocomplete="off">
-            <input type="email" placeholder="Phone Number" autocomplete="off">
+            <div class="input-anim">
+                <input type="text" required>
+                <label>E-mail</label>
+            </div>
+
+            <div class="input-anim">
+                <input type="text" required>
+                <label>Phone Number</label>
+            </div>
             <p class="info-headings">Shipping Address</p>
-            <input type="text" placeholder="Address" autocomplete="off">
-            <input type="text" placeholder="City" autocomplete="off">
+            <div class="input-anim">
+                <input type="text" required>
+                <label>Address</label>
+            </div>
+            <div class="input-anim">
+                <input type="text" required>
+                <label>City</label>
+            </div>
             <div class="zipcode">
-                <input type="text" placeholder="State/Province">
-                <input type="text" placeholder="Zip/PostalCode" autocomplete="off">
+                <div class="input-anim">
+                    <input type="text" required>
+                    <label>State/Province</label>
+                </div>
+                <div class="input-anim">
+                    <input type="text" required>
+                    <label>Zip/Postal Code</label>
+                </div>
             </div>
 
             <div class="country-name">
@@ -43,15 +62,27 @@
             </div>
             <p class="info-headings">Billing Address</p>
             <div class="check">
-                <input type="checkbox">
+                <input class="diff-bill-checkbox" type="checkbox">
                 <p> Use different billing addres</p>
             </div>
 
-            <input type="text" placeholder="Address" autocomplete="off">
-            <input type="text" placeholder="City" autocomplete="off">
+            <div class="input-anim">
+                <input type="text" required>
+                <label>Address</label>
+            </div>
+            <div class="input-anim">
+                <input type="text" required>
+                <label>City</label>
+            </div>
             <div class="zipcode">
-                <input type="text" placeholder="State/Province">
-                <input type="text" placeholder="Zip/PostalCode" autocomplete="off">
+                <div class="input-anim">
+                    <input type="text" required>
+                    <label>State/Province</label>
+                </div>
+                <div class="input-anim">
+                    <input type="text" required>
+                    <label>Zip/Postal Code</label>
+                </div>
             </div>
             <div class="country-name">
                 <label>Country</label>
@@ -63,11 +94,17 @@
         </form>
         <form class="payment-info">
             <p class="info-headings">Payment Method</p>
-            <input type="text" placeholder="Cardholder Name">
-            <input type="text" placeholder="Card Number">
+            <div class="input-anim">
+                    <input type="text" required>
+                    <label>Cardholder Name</label>
+                </div>
+                <div class="input-anim">
+                        <input type="text" required>
+                        <label>Card Number</label>
+                    </div>
             <div class="card-info">
                 <div class="expiry-date">
-                    <label>Expiry</label>
+                    <p>Expiry</p>
                     <select for="expiry-date">
                         <option>Jan</option>
                         <option>Feb</option>
@@ -99,7 +136,10 @@
 
                     </select>
                 </div>
-                <input type="password" placeholder="CVV">
+                <div id="cvv" class="input-anim">
+                        <input type="text" required>
+                        <label>CVV</label>
+                    </div>
 
             </div>
             <section class="order-summary">
@@ -118,7 +158,7 @@
     </section>
     <footer>
         <a>Made by Harish</a>
-        <button>DEMO ONLY</button>
+        <p class="demo-only">DEMO ONLY</p>
     </footer>
 </body>
 
