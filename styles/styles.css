@@ -1,0 +1,808 @@
+@media only screen and (max-width: 767px) {
+  .hidden-menu {
+    display: block;
+  }
+
+  .nav-menu a {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mens-outerwear img {
+    height: 200px !important;
+  }
+
+  .mens-outerwear-img {
+    display: none;
+  }
+
+  .ladies-outerwear img {
+    height: 200px !important;
+  }
+
+  .mens-apparel {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .product {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    margin: 0 !important;
+    padding: 0 0 32px 0;
+    align-items: center;
+  }
+
+  .product-info {
+    min-width: 90%;
+    padding: 0 24px 0 24px;
+    margin: 0 !important;
+  }
+
+  .product-info button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-self: center;
+    background-color: #172c50;
+    border: 2px solid #172c50;
+    color: white;
+    width: 100%;
+    height: 4em;
+  }
+
+  .product-img {
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .total {
+    display: flex;
+    padding-right: 5em;
+    justify-content: flex-end;
+  }
+
+  .total-price {
+    font-weight: 600;
+    font-size: 0.75em;
+    justify-content: flex-end;
+  }
+
+  .total button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-self: center;
+    background-color: #172c50;
+    border: 2px solid #172c50;
+    color: white;
+    width: 100%;
+    height: 5em;
+  }
+
+  .item-info {
+    padding-top: 2.5em;
+    width: 150px !important;
+  }
+
+  .page-footer {
+    display: none;
+  }
+
+  /* checkout page */
+  .billing-info {
+    grid-template-columns: 100% !important;
+    width: 90% !important;
+  }
+
+  .acc-info {
+    justify-self: stretch !important;
+    width: 100% !important;
+  }
+
+  .place-order-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0 !important;
+    align-self: center;
+    background-color: #172c50 !important;
+    border: 2px solid #172c50 !important;
+    color: white;
+    width: 100% !important;
+    height: 5em !important;
+  }
+
+  .payment-info {
+    justify-self: stretch !important;
+    padding-bottom: 4em;
+    padding-right: 2em;
+    width: 100% !important;
+  }
+
+  .mens-apparel > li > a > img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* checkout page */
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden-menu {
+    visibility: hidden;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+
+  .mens-apparel {
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .total {
+    display: flex;
+    padding-right: 10em;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+  }
+
+  .total button {
+    background-color: transparent;
+    border: 2px solid black;
+    width: 12em;
+    height: 3em;
+  }
+
+  .total-price {
+    font-weight: 600;
+    padding-right: 3em;
+    font-size: 0.75em;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0em 2em 2em 7em;
+  }
+
+  .product-info button {
+    align-self: center;
+    background-color: white;
+    border: 2px solid black;
+    width: 14em;
+    height: 3em;
+  }
+
+  .cart {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .total {
+    margin-left: 12%;
+    margin-right: 10%;
+  }
+}
+html {
+  padding-bottom: 50px;
+  min-height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 10%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  margin: 1.5em;
+}
+
+.shop-title {
+  letter-spacing: 0.4em;
+  font-weight: 600;
+}
+
+.cart-button img {
+  width: 25px;
+}
+
+.nav-menu {
+  padding: 1.5em;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+}
+
+.nav-menu a {
+  flex-basis: 150px;
+}
+
+.mens-outerwear {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.mens-outerwear img {
+  width: 100%;
+  padding-bottom: 1em;
+  object-fit: cover;
+  height: 300px;
+}
+
+.category-title {
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+.mens-outerwear a {
+  align-self: center;
+}
+
+.mens-outerwear button {
+  background-color: white;
+  border: 2px solid black;
+  width: 12em;
+  height: 3em;
+}
+
+.ladies-outerwear {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.ladies-outerwear img {
+  width: 100%;
+  padding-bottom: 1em;
+  object-fit: cover;
+  height: 300px;
+}
+
+.ladies-outerwear button {
+  align-self: center;
+  background-color: white;
+  border: 2px solid black;
+  width: 12em;
+  height: 3em;
+}
+
+.tshirts {
+  display: flex;
+}
+
+.mens-tshirts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.mens-tshirts img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding-bottom: 1em;
+}
+
+.mens-tshirts button {
+  align-self: center;
+  background-color: white;
+  border: 2px solid black;
+  width: 12em;
+  height: 3em;
+}
+
+.ladies-tshirts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+.ladies-tshirts img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  padding-bottom: 1em;
+}
+
+.ladies-tshirts button {
+  align-self: center;
+  background-color: white;
+  border: 2px solid black;
+  width: 12em;
+  height: 3em;
+}
+
+/* <--------------- .mens-outerwear css starts here --------------------->*/
+.mens-outerwear img {
+  width: 100%;
+}
+
+.shop-category {
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+.mens-outerwear-quantity {
+  align-self: center;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75em;
+  margin: 0;
+}
+
+/* apparel style starts here */
+.mens-apparel {
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mens-apparel li {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  padding: 4px;
+}
+
+.mens-apparel a {
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.item-name {
+  margin-top: 4em;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+.price {
+  align-self: center;
+  color: gray;
+  margin: 0.5em 0em 3em 0em;
+}
+
+/* <------------------- .mens-outerwear css ends here ------------------>*/
+
+/* <------------------productPage.css starts here ------------------------------>*/
+.product-img {
+  justify-self: center;
+}
+
+.product-img img {
+  max-width: 100%;
+  height: auto;
+  resize: both;
+  padding: 0;
+}
+
+.product-info {
+  margin: 0em 2em 4em 2em;
+  max-width: 400px;
+  max-height: 600px;
+}
+
+.product-info h1,
+.product-info p,
+.product-info h3,
+.product-title {
+  font-weight: 200;
+  justify-self: center;
+}
+.product-title {
+  font-size: 1.5em;
+}
+.product div {
+  padding-top: 2em;
+}
+
+.description-head {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 16px 0 16px 0;
+}
+
+.description {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.features {
+  font-size: 1em;
+  padding-top: 0;
+  margin: 16px 0 16px 0;
+}
+
+.features p {
+  color: gray;
+  padding-top: 0;
+  margin: 16px 0 16px 0;
+}
+
+.features li {
+  font-size: 0.8em;
+  list-style: disc;
+  margin-left: 2.5em;
+  color: gray;
+  padding-bottom: 0.5em;
+}
+
+.product-price {
+  color: gray;
+  margin-top: 2em;
+  margin-bottom: 2.5em;
+}
+
+.size {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.size,
+.quantity {
+  height: 2em;
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.size select,
+.quantity select {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-left: 25%;
+}
+
+.size label,
+.quantity label {
+  position: absolute;
+  font-size: 0.8em;
+}
+
+/* <------------------productPage.css starts here ------------------------------>*/
+
+/* <------------------cart.css starts here ------------------------------>*/
+.info {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  margin-bottom: 1em;
+}
+
+.cart-quantity {
+  margin: 0;
+  padding: 0;
+  color: gray;
+  font-size: 0.75em;
+}
+
+.cart {
+  padding: 3em;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+.cart-item-name {
+  align-self: center;
+  padding: 0 2em 0 2em;
+  color: black;
+  font-size: 0.75em;
+}
+.cart-items {
+  color: #757575;
+  font-size: 0.75em;
+}
+.item-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8em;
+  color: gray;
+  width: 300px;
+}
+
+.item-image img {
+  width: 72px;
+  height: 72px;
+}
+
+.cancel-button {
+  align-self: center;
+}
+
+.cart-quantity label {
+  font-size: 1em;
+  padding-top: 3px;
+}
+
+.cart-quantity {
+  border-bottom: none;
+}
+
+.cart-quantity select {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 5em;
+  padding-left: 24px;
+}
+
+.item-info p {
+  font-size: 1em;
+}
+.total-price {
+  align-self: center;
+}
+
+/* <----------- ends here cart.css----------------------------> */
+
+/* Animation on input boxes */
+.input-anim {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.input-anim input {
+  font-size: 13px;
+  padding: 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #757575;
+}
+
+.input-anim input:focus {
+  border-bottom: 2px solid black;
+}
+.input-anim label {
+  color: gray;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  top: 24px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input-anim input:focus ~ label,
+.input-anim input:valid ~ label {
+  top: -6px;
+  font-size: 14px;
+  color: gray;
+}
+
+/* animation on input boxes */
+
+/* checkpout starts */
+.checkout {
+  padding: 64px 0 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-headings {
+  font-size: 0.75em;
+  margin: 1em 0 1em 0;
+  font-weight: bold;
+}
+
+#demo {
+  padding-top: 1em;
+  font-size: 0.75em;
+  color: gray;
+}
+
+.billing-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.acc-info {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  width: 65%;
+}
+
+label {
+  font-size: 0.75em;
+}
+
+input:not([type="checkbox"]) {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 4em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.country-name {
+  padding-top: 2em;
+  font-size: 1.25em;
+}
+
+.country-name select {
+  width: 100%;
+  height: 2em;
+  font-size: initial;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.country-name select:focus {
+  border-bottom: 2px solid black;
+}
+.card-info select:focus {
+  border-bottom: 2px solid black;
+}
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.order-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+
+.zipcode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2.5%;
+  justify-content: space-between;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  align-items: baseline;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card-info div {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  align-self: end;
+}
+
+.expiry-year select {
+  width: 100%;
+  font-size: 1em;
+}
+
+.expiry-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.expiry-date p {
+  padding-bottom: 0.75em;
+  font-size: 0.8em;
+}
+#cvv {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.expiry-date select {
+  width: 100%;
+  font-size: 1em;
+}
+
+button:focus {
+  background-color: black;
+  color: white;
+}
+select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.diff-bill-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+}
+
+.diff-bill-checkbox:checked {
+  background-color: black;
+  color: white;
+}
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  padding: 2em;
+  width: 65%;
+}
+
+.place-order-btn {
+  margin-top: 2em;
+  width: 16em;
+  height: 3em;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.order-details {
+  margin: 2em 0 2em 0;
+}
+
+.billing-info section {
+  margin: 2em 0 2em 0;
+}
+.country-name:focus ~ label {
+  border-bottom: 5px solid black;
+}
+/* checkout ends */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  align-self: center;
+  color: #757575;
+  font-size: 13px;
+  padding-bottom: 8px;
+}
+
+.demo-only {
+  align-self: center;
+  font-size: 13px;
+  background-color: #202020;
+  color: white;
+  padding: 8px 16px 8px 16px;
+}
