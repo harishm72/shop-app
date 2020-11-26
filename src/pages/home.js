@@ -1,59 +1,53 @@
 import Link from "next/link";
+import Header from "../components/header";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
 
 function Home() {
   return (
     <div>
-      <div className="shop">
-        <span className="hidden-menu">&#x2630;</span>
-        <Link href="/" className="shop-title">
-          <a>SHOP</a>
-        </Link>
-        <Link href="/cart">
-          <a href="/cart">
-            <span style={{ fontSize: 24 }} className="fas fa-shopping-cart">
-              Cart
-            </span>
-          </a>
-        </Link>
-      </div>
-      <nav className="nav-menu">
-        <Link href="/mens">Men's Outerwear</Link>
-        <a>Ladies Outerwear</a>
-        <a>Men's T-Shirts</a>
-        <a>Ladies T-Shirts</a>
-      </nav>
-      <section className="mens-outerwear">
-        <Link href="/mens">
-          <img src="../images/mens_outerwear.jpg" alt="Men's Outerwear" />
-        </Link>
-        <p className="category-title">Men's Outerwear</p>
-        <Link href="/mens">
-          <button>SHOP NOW</button>
-        </Link>
-      </section>
-      <section className="ladies-outerwear">
-        <img src="../images/ladies_outerwear.jpg" alt="Ladies Outerwear" />
-        <p className="category-title">Ladies Outerwear</p>
-        <button>SHOP NOW</button>
-      </section>
+      <Header />
+      <NavBar />
+      <CategorySection
+        link="/mens-wear"
+        title="Men's Outerwear"
+        imgURL="../images/mens_outerwear.jpg"
+      />
+      <CategorySection
+        link="/womens-wear"
+        title="Ladies Outerwear"
+        imgURL="../images/ladies_outerwear.jpg"
+      />
       <section className="tshirts">
-        <section className="mens-tshirts">
-          <img src="../images/mens_tshirts.jpg" />
-          <p className="category-title">Men's T-shirts</p>
-          <button>SHOP NOW</button>
-        </section>
-        <section className="ladies-tshirts">
-          <img src="../images/ladies_tshirts.jpg" />
-          <p className="category-title">Ladies T-shirts</p>
-          <button>SHOP NOW</button>
-        </section>
+        <CategorySection
+          link="/mens-tshirts"
+          title="Men's T-Shirts"
+          imgURL="../images/mens_tshirts.jpg"
+        />
+        <CategorySection
+          link="/womens-tshirts"
+          title="Ladies T-Shirts"
+          imgURL="../images/ladies_tshirts.jpg"
+        />
       </section>
-      <footer>
-        <a>Made by Harish</a>
-        <p className="demo-only">DEMO ONLY</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
 
 export default Home;
+
+const CategorySection = (props) => {
+  const { link, imgURL, title } = props;
+  return (
+    <section className="mens-outerwear">
+      <Link href={link}>
+        <img src={imgURL} alt="Men's Outerwear" />
+      </Link>
+      <p className="category-title">{title}</p>
+      <Link href={link}>
+        <button>SHOP NOW</button>
+      </Link>
+    </section>
+  );
+};
