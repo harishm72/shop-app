@@ -1,17 +1,6 @@
 function Checkout() {
   return (
     <div>
-      <header className="shop">
-        <i className="hidden-menu">&#x2630;</i>
-        <a href="./index.html" className="shop-title">
-          SHOP
-        </a>
-        <a href="./cart.html">
-          <i style={{fontSize:24 }}s className="fa">
-            &#xf07a;
-          </i>
-        </a>
-      </header>
       <section className="checkout">
         <div>Checkout</div>
         <div id="demo">Shop is a demo app - form data will not be sent</div>

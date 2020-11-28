@@ -1,8 +1,6 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-import NavBar from "../components/navbar";
-import ProductCard from "../components/productCard";
 import { useEffect, useState } from "react";
+
+import ProductCard from "../components/productCard";
 
 function WomensTShirts() {
   const [products, setProducts] = useState([]);
@@ -20,8 +18,6 @@ function WomensTShirts() {
 
   return (
     <div>
-      <Header />
-      <NavBar />
       <section className="mens-outerwear">
         <img
           className="mens-outerwear-img"
@@ -39,10 +35,10 @@ function WomensTShirts() {
             imgSrc={`./${product.image}`}
             title={product.title}
             price={product.price}
+            category="ladies_tshirts"
           />
         ))}
       </ul>
-      <Footer />
     </div>
   );
 }

@@ -1,20 +1,8 @@
 import Link from "next/link";
-import Footer from "../components/footer";
 
 function cart() {
   return (
     <div>
-      <header className="shop">
-        <span className="hidden-menu">&#x2630;</span>
-        <Link href="/" className="shop-title">
-          SHOP
-        </Link>
-        <Link href="/cart">
-          <i style={{fontSize: 24 }} className="fa">
-            &#xf07a;
-          </i>
-        </Link>
-      </header>
       <div className="info">
         <h4>Your Cart</h4>
         <p className="cart-items">(1 item)</p>
@@ -45,7 +33,6 @@ function cart() {
           <button type="submit">CHECK OUT</button>
         </Link>
       </div>
-      <Footer />
     </div>
   );
 }

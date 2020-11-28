@@ -1,13 +1,8 @@
 import Link from "next/link";
-import Header from "../components/header";
-import NavBar from "../components/navbar";
-import Footer from "../components/footer";
 
 function Home() {
   return (
     <div>
-      <Header />
-      <NavBar />
       <CategorySection
         link="/mens-wear"
         title="Men's Outerwear"
@@ -18,7 +13,7 @@ function Home() {
         title="Ladies Outerwear"
         imgURL="../images/ladies_outerwear.jpg"
       />
-      <section className="tshirts">
+      <section style={{display:'flex'}}>
         <CategorySection
           link="/mens-tshirts"
           title="Men's T-Shirts"
@@ -30,7 +25,6 @@ function Home() {
           imgURL="../images/ladies_tshirts.jpg"
         />
       </section>
-      <Footer />
     </div>
   );
 }
