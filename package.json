@@ -10,7 +10,9 @@
   "dependencies": {
     "next": "9.5.5",
     "node-fetch": "^2.6.1",
+    "phosphor-react": "^1.1.2",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "react-html-parser": "^2.0.2"
   }
 }
