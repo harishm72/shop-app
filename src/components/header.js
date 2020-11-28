@@ -1,17 +1,20 @@
 import Link from "next/link";
+import { ShoppingCart } from "phosphor-react";
 
 function Header() {
   return (
-    <div className="shop">
-      <span className="hidden-menu">&#x2630;</span>
-      <Link href="/" className="shop-title">
-        <a>SHOP</a>
-      </Link>
-      <Link href="/cart">
-        <span style={{ fontSize: 24 }} className="fas fa-shopping-cart">
-          Cart
+    <div className="shop-header">
+      <span className="hidden-menu menu-icon">&#x2630;</span>
+      <span className="shop-title-link">
+        <span className="shop-title">
+          <Link href="/">SHOP</Link>
         </span>
-      </Link>
+      </span>
+      <span className="cart-link">
+        <Link href="/cart">
+          <ShoppingCart fontSize={24} />
+        </Link>
+      </span>
     </div>
   );
 }

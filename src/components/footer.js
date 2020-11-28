@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <p className="demo-only">DEMO ONLY</p>
     </footer>
   );
