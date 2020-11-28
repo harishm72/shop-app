@@ -1,3 +1,8 @@
+main {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 @media only screen and (max-width: 767px) {
   .hidden-menu {
     display: block;
@@ -37,7 +42,7 @@
 
   .product-info {
     min-width: 90%;
-    padding: 0 24px 0 24px;
+    padding: 0 24px 80px 24px;
     margin: 0 !important;
   }
 
@@ -57,6 +62,10 @@
     padding: 0;
     max-width: 100%;
     height: auto;
+  }
+
+  .product-img img {
+    transform: scale(1) !important;
   }
 
   .total {
@@ -127,6 +136,10 @@
     height: auto;
   }
 
+  .footer {
+    display: none;
+  }
+
   /* checkout page */
 }
 
@@ -170,7 +183,7 @@
   .product {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0em 2em 2em 7em;
+    margin: 4em 2em 2em 7em;
   }
 
   .product-info button {
@@ -207,16 +220,31 @@ a {
   color: black;
 }
 
-.shop {
+.shop-header {
   display: flex;
   justify-content: space-between;
   font-family: "Roboto", sans-serif;
-  margin: 1.5em;
+  margin: 1.25em;
+  align-items: center;
+}
+
+.menu-icon,
+.cart-link {
+  flex-basis: 10%;
+}
+
+.cart-link {
+  text-align: end;
 }
 
 .shop-title {
-  letter-spacing: 0.4em;
+  flex-basis: 80%;
+}
+
+.shop-title {
+  text-align: center;
   font-weight: 600;
+  letter-spacing: 6px;
 }
 
 .cart-button img {
@@ -242,10 +270,10 @@ a {
 }
 
 .mens-outerwear img {
-  width: 100%;
+  max-width: 100%;
+  height: 100%;
   padding-bottom: 1em;
   object-fit: cover;
-  height: 300px;
 }
 
 .category-title {
@@ -334,9 +362,6 @@ a {
 }
 
 /* <--------------- .mens-outerwear css starts here --------------------->*/
-.mens-outerwear img {
-  width: 100%;
-}
 
 .shop-category {
   align-self: center;
@@ -395,6 +420,8 @@ a {
 /* <------------------productPage.css starts here ------------------------------>*/
 .product-img {
   justify-self: center;
+  display: flex;
+  align-items: center;
 }
 
 .product-img img {
@@ -402,6 +429,7 @@ a {
   height: auto;
   resize: both;
   padding: 0;
+  transform: scale(1.75);
 }
 
 .product-info {
@@ -420,9 +448,8 @@ a {
 .product-title {
   font-size: 1.5em;
 }
-.product div {
-  padding-top: 2em;
-}
+
+
 
 .description-head {
   font-size: 0.8em;
@@ -433,6 +460,18 @@ a {
 .description {
   font-size: 0.9em;
   color: gray;
+}
+
+.description ul {
+  list-style: disc;
+}
+
+.description ul > li {
+  font-size: 1em;
+  list-style: disc;
+  margin-left: 2.5em;
+  color: gray;
+  padding-bottom: 0.5em;
 }
 
 .features {
@@ -447,13 +486,7 @@ a {
   margin: 16px 0 16px 0;
 }
 
-.features li {
-  font-size: 0.8em;
-  list-style: disc;
-  margin-left: 2.5em;
-  color: gray;
-  padding-bottom: 0.5em;
-}
+
 
 .product-price {
   color: gray;
@@ -467,9 +500,11 @@ a {
 
 .size,
 .quantity {
-  height: 2em;
+  height: 4em;
   padding: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
 }
 
 .size select,
@@ -480,7 +515,9 @@ a {
   outline: none;
   border: none;
   width: 100%;
-  padding-left: 25%;
+  align-items: center;
+  padding: 20px 25%;
+  font-size: 1em;
 }
 
 .size label,
