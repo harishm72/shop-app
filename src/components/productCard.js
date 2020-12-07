@@ -5,7 +5,7 @@ function ProductCard(props) {
   return (
     <li>
       <Link href={`/${id}?category=${category}`}>
-        <img src={imgSrc} />
+        <img src={`/shop-app/${imgSrc}`} />
       </Link>
       <p className="item-name">{title}</p>
       <p className="price">{price}</p>

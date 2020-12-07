@@ -6,23 +6,23 @@ function Home() {
       <CategorySection
         link="/mens-wear"
         title="Men's Outerwear"
-        imgURL="/images/mens_outerwear.jpg"
+        imgURL="/shop-app/images/mens_outerwear.jpg"
       />
       <CategorySection
         link="/womens-wear"
         title="Ladies Outerwear"
-        imgURL="/images/ladies_outerwear.jpg"
+        imgURL="/shop-app/images/ladies_outerwear.jpg"
       />
       <section style={{display:'flex'}}>
         <CategorySection
           link="/mens-tshirt"
           title="Men's T-Shirts"
-          imgURL="/images/mens_tshirts.jpg"
+          imgURL="/shop-app/images/mens_tshirts.jpg"
         />
         <CategorySection
           link="/womens-tshirt"
           title="Ladies T-Shirts"
-          imgURL="/images/ladies_tshirts.jpg"
+          imgURL="/shop-app/images/ladies_tshirts.jpg"
         />
       </section>
     </div>

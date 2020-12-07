@@ -9,7 +9,7 @@ function cart() {
       </div>
       <section className="cart">
         <div className="item-image">
-          <img src="../images/cart-images/10-14158B.jpg" />
+          <img src="/shop-app/images/cart-images/10-14158B.jpg" />
           <p className="cart-item-name">Recycled Plastic Bottle Hoodie-Green</p>
         </div>
         <div className="item-info">
