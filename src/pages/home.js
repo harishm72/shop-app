@@ -6,23 +6,23 @@ function Home() {
       <CategorySection
         link="/mens-wear"
         title="Men's Outerwear"
-        imgURL="../images/mens_outerwear.jpg"
+        imgURL="/images/mens_outerwear.jpg"
       />
       <CategorySection
         link="/womens-wear"
         title="Ladies Outerwear"
-        imgURL="../images/ladies_outerwear.jpg"
+        imgURL="/images/ladies_outerwear.jpg"
       />
       <section style={{display:'flex'}}>
         <CategorySection
           link="/mens-tshirt"
           title="Men's T-Shirts"
-          imgURL="../images/mens_tshirts.jpg"
+          imgURL="/images/mens_tshirts.jpg"
         />
         <CategorySection
           link="/womens-tshirt"
           title="Ladies T-Shirts"
-          imgURL="../images/ladies_tshirts.jpg"
+          imgURL="/images/ladies_tshirts.jpg"
         />
       </section>
     </div>
@@ -33,6 +33,7 @@ export default Home;
 
 const CategorySection = (props) => {
   const { link, imgURL, title } = props;
+  console.log(process.env.NODE_ENV)
   return (
     <section className="mens-outerwear">
       <Link href={link}>

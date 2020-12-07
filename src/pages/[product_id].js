@@ -53,7 +53,7 @@ function ProductPage(props) {
       ) : (
         <section className="product">
           <div className="product-img">
-            <img src={`./${data.image || ""}`} />
+            <img src={`/${data.image || ""}`} />
           </div>
           <div className="product-info">
             <h1 className="product-title">{data.name}</h1>
