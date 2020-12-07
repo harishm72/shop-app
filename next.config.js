@@ -1,3 +1,3 @@
 module.exports = {
-    basePath: '/shop-app',
+    basePath: '/shop-app/',
   }
