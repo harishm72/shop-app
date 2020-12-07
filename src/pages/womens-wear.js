@@ -9,7 +9,7 @@ function WomensWear() {
   useEffect(() => {
     try {
       const fetchData = async () => {
-        const res = await (await fetch("../data/ladies_outerwear.json")).json();
+        const res = await (await fetch("/shop-app/data/ladies_outerwear.json")).json();
         setProducts(res);
       };
 
@@ -22,7 +22,7 @@ function WomensWear() {
       <section className="mens-outerwear">
         <img
           className="mens-outerwear-img"
-          src="../images/ladies_outerwear.jpg"
+          src="/shop-app/images/ladies_outerwear.jpg"
           alt="Men's Outerwear"
         />
         <p className="shop-category">Men's Outerwear</p>
