@@ -15,12 +15,12 @@ function Home() {
       />
       <section style={{display:'flex'}}>
         <CategorySection
-          link="/mens-tshirts"
+          link="/mens-tshirt"
           title="Men's T-Shirts"
           imgURL="../images/mens_tshirts.jpg"
         />
         <CategorySection
-          link="/womens-tshirts"
+          link="/womens-tshirt"
           title="Ladies T-Shirts"
           imgURL="../images/ladies_tshirts.jpg"
         />
