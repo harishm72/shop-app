@@ -21,7 +21,7 @@ function ProductPage(props) {
     try {
       setLoading(true);
       const fetchData = async () => {
-        const res = await (await fetch(`../data/${category}.json`)).json();
+        const res = await (await fetch(`/shop-app/data/${category}.json`)).json();
         const [productInfo] = res.filter(
           (item) => item.id === parseInt(product_id, 10)
         );
