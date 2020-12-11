@@ -1,7 +1,7 @@
 
 ### About 
 
-## This is completely responsive clothing catalogue site built with ReactJS, NextJS and Redux.
+## This is a completely responsive clothing catalogue site built with ReactJS, NextJS and Redux.
 # This is a clone of https://shop.polymer-project.org/
 
 
