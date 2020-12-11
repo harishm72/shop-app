@@ -36,7 +36,7 @@ function WomensWear() {
             imgSrc={`./${product.image}`}
             title={product.title}
             price={product.price}
-            category="ladies_tshirt"
+            category="mens_tshirt"
           />
         ))}
       </ul>
