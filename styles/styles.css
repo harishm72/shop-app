@@ -1,6 +1,15 @@
 main {
 	max-width: 1440px;
-	margin: 0 auto;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
@@ -203,21 +212,17 @@ main {
     margin-right: 10%;
   }
 }
-html {
-  padding-bottom: 50px;
-  min-height: 100%;
-  box-sizing: border-box;
-  position: relative;
-  padding-bottom: 10%;
-}
+
 body {
   font-family: "Roboto", sans-serif;
   height: 100%;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .shop-header {
@@ -586,6 +591,7 @@ h4 {
 
 .cancel-button {
   align-self: center;
+  cursor: pointer;
 }
 
 .cart-quantity label {
@@ -824,10 +830,6 @@ footer {
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   height: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   text-align: center;
 }
 
