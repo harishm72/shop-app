@@ -3,7 +3,7 @@ import Link from "next/link";
 function ProductCard(props) {
   const { imgSrc, title, price, id, category } = props;
   return (
-    <li>
+    <li className="pointer">
       <Link href={`/${id}?category=${category}`}>
         <img src={`/shop-app/${imgSrc}`} />
       </Link>
