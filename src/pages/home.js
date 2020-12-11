@@ -13,18 +13,21 @@ function Home() {
         title="Ladies Outerwear"
         imgURL="/shop-app/images/ladies_outerwear.jpg"
       />
-      <section style={{display:'flex'}}>
+
+      <div className="flex">
         <CategorySection
           link="/mens-tshirt"
           title="Men's T-Shirts"
           imgURL="/shop-app/images/mens_tshirts.jpg"
+          className="mens-tshirts"
         />
         <CategorySection
           link="/womens-tshirt"
           title="Ladies T-Shirts"
           imgURL="/shop-app/images/ladies_tshirts.jpg"
+          className="ladies-tshirts"
         />
-      </section>
+      </div>
     </div>
   );
 }
@@ -32,10 +35,9 @@ function Home() {
 export default Home;
 
 const CategorySection = (props) => {
-  const { link, imgURL, title } = props;
-  console.log(process.env.NODE_ENV)
+  const { link, imgURL, title, className } = props;
   return (
-    <section className="mens-outerwear">
+    <section key={link} className={className || "mens-outerwear"}>
       <Link href={link}>
         <img src={imgURL} alt="Men's Outerwear" />
       </Link>
