@@ -25,7 +25,7 @@ function WomensWear() {
           src="/shop-app/images/ladies_outerwear.jpg"
           alt="Men's Outerwear"
         />
-        <p className="shop-category">Men's Outerwear</p>
+        <p className="shop-category">Ladies's Outerwear</p>
         <p className="mens-outerwear-quantity">({products.length} items)</p>
       </section>
       <ul className="mens-apparel">
