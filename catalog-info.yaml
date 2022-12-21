@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: shop-app
+  annotations:
+    github.com/project-slug: harishm72/shop-app
+spec:
+  type: other
+  lifecycle: unknown
+  owner: harishm72
